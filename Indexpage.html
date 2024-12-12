@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+    <ul id="listbar">
+        <li class="barcategory"><a class="barlink" href="../LoginProject/jsfiddle.html">Home</a></li>
+        <li class="barcategory"><a class="barlink" href="../LoginProject/Indexpage.html">Index</a></li>
+        <li class="barcategory"><a class="barlink" href="../LoginProject/Contact.html">Contact</a></li>
+        <li class="barcategory"><a class="barlink" href="../LoginProject/About.html">About</a></li>
+    </ul>
+    <button id="loginbutton" onclick="loginclick()">Login</button>
+</body>
+<style>
+    #listbar{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }      
+      .barcategory{
+        display: inline;
+        float: left;
+        padding: 5px;
+      }
+      .barlink{
+        color: white;
+        display: block;
+        background-color: #333;
+        padding: 8px;
+        border-radius: 10px;
+        transition: background-color 0.15s;
+      }
+      .barlink:hover{
+        background-color: #000000;
+      }
+      .barlink:active{
+        background-color: #122707;
+      }
+    #loginbutton{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        background-color: greenyellow;
+        padding: 10px;
+        margin-left: 700px;
+        font-size: 13px;
+        border-radius: 10px;
+        border: 1;
+        border-color: black;
+        color: black;
+        transition: opacity 0.5s , background-color 0.5s;
+    }
+    #loginbutton:hover{
+        opacity: 0.8;
+        background-color: rgb(159, 255, 15);
+    }
+    #loginbutton:active{
+        opacity: 0.6;
+        background-color: rgb(188, 251, 95);
+    }
+</style>
+<script>
+    function loginclick(){
+        window.open("../LoginProject/powerful_loginpage.html")
+    }
+</script>
+</html>

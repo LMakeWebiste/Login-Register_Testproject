@@ -1,0 +1,278 @@
+<html>
+
+<head>
+  <title>This is my first project</title>
+</head>
+
+<body>
+  <ul id="listbar">
+    <li class="barcategory"><a class="barlink" href="../LoginProject/jsfiddle.html"><span>Home</span></a></li>
+    <li class="barcategory"><a class="barlink" href="../LoginProject/Indexpage.html">Index</a></li>
+    <li class="barcategory"><a class="barlink" href="../LoginProject/Contact.html">Contact</a></li>
+    <li class="barcategory"><a class="barlink" href="../LoginProject/About.html">About</a></li>
+  </ul>
+ 
+  <h1 class="Title">Lesson 1:</h1>
+  <h2 class="Title">p,b,i,u</h2>
+
+  <table border="1" cellpadding="10" cellspacing="4">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="category">Normal</td>
+        <td>Hello world</td>
+      </tr>
+      <tr>
+        <td class="category">Bold</td>
+        <td><b>Hello world</b></td>
+      </tr>
+      <tr>
+        <td class="category">Cursiv</td>
+        <td><i>Hello world</i></td>
+      </tr>
+      <tr>
+        <td class="category">Undergraded</td>
+        <td><u>Hello world</u></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="Title">Links</h2>
+  <a href="https://www.google.de/?hl=de">Google</a>
+  <h2>Images</h2>
+  <img src="">
+
+  <h1 class="Login">
+    Login
+  </h1>
+  <form>
+    <p>Enter your Name(max. 10)</p>
+    <input type="text" maxlength="10">
+    <p>Enter your Passwort(max. 10)</p>
+    <input type="password" maxlength="10">
+    <br>
+    <input type="radio" value="male" name="gender">male
+    <input type="radio" value="female" name="gender">female
+    <br>
+    Sent Picture: <input type="file">
+    <br>
+    <input type="reset">
+    <br>
+    <input type="button" value="Login">
+    <a href="https://www.google.de"><input type="button" value="Register"></a>
+  </form>
+  <br><br>
+
+  <table class="Ranking" border="1" cellpadding="10" cellspacing="4">
+    <thead>
+      <caption><b>Ranking</b></caption>
+      <tr>
+        <th>Ranking</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="n1">1</td>
+        <td>Daniel</td>
+      </tr>
+      <tr>
+        <td id="n2">2</td>
+        <td>Lennart</td>
+      </tr>
+      <tr>
+        <td id="n3">3</td>
+        <td>Tomke</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ul>
+    <li>Working</li>
+    <li>Lennart</li>
+    <li>Leon</li>
+  </ul>
+  <ol type="a">
+    <li>Daniel</li>
+    <li>Lennart</li>
+    <li>Tomke</li>
+  </ol>
+  <ol type="1">
+    <li>Daniel</li>
+    <li>Lennart</li>
+    <li>Tomke</li>
+  </ol>
+
+  <h2>Font-Family</h2>
+
+  <table id="tabel-font-family" border="1" cellpadding="10" cellspacing="4">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="category">Gerogia</td>
+        <td id="ex1">Hello world</td>
+      </tr>
+      <tr>
+        <td class="category">Palatino</td>
+        <td id="ex2">Hello world</td>
+      </tr>
+      <tr>
+        <td class="category">Times</td>
+        <td id="ex3">Hello world</td>
+      </tr>
+      <tr>
+        <td class="category">cursive</td>
+        <td id="ex4">Hello world</td>
+      </tr>
+
+      <tr>
+        <td class="category">Arial,Helvetica</td>
+        <td id="ex5">Hello world</td>
+      </tr>
+      <tr>
+        <td class="category">Gadget</td>
+        <td id="ex6">Hello world</td>
+      </tr>
+      <tr>
+        <td class="category">Impact</td>
+        <td id="ex7">Hello world</td>
+      </tr>
+      <tr>
+        <td class="category">Tahoma,Geneva</td>
+        <td id="ex8">Hello world</td>
+      </tr>
+      <tr>
+        <td class="category">Monaco</td>
+        <td id="ex9">Hello world</td>
+      </tr>
+      <tr>
+        <td class="category">Verdana</td>
+        <td id="ex10">Hello world</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+<style>
+  #listbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }      
+  .barcategory{
+    display: inline;
+    float: left;
+    padding: 5px;
+  }
+  .barlink{
+    color: white;
+    display: block;
+    background-color: #333;
+    padding: 8px;
+    border-radius: 10px;
+    transition: background-color 0.15s;
+  }
+  .barlink:hover{
+    background-color: #000000;
+  }
+  .barlink:active{
+    background-color: #122707;
+  }
+
+  h2,
+  h1 {
+    color: Red
+  }
+
+  th {
+    color: Purple
+  }
+
+  #n1 {
+    color: Yellow
+  }
+
+  #n2 {
+    color: grey
+  }
+
+  #n3 {
+    color: brown
+  }
+
+
+  td {
+    color: green
+  }
+
+  .category {
+    color: grey
+  }
+
+  body {
+    background-color: lightblue;
+    text-align: center;
+    font-family: "arial"
+  }
+
+  #ex1 {
+    font-family: "Gerogia"
+  }
+
+
+  #ex2 {
+    font-family: "Palatino"
+  }
+
+  #ex3 {
+    font-family: "Times"
+  }
+
+
+  #ex4 {
+    font-family: "Cursive"
+  }
+
+  #ex5 {
+    font-family: "Arial"
+  }
+
+  #ex6 {
+    font-family: "Gadget"
+  }
+
+  #ex7 {
+    font-family: "Impact"
+  }
+
+  #ex8 {
+    font-family: "Geneva"
+  }
+
+  #ex9 {
+    font-family: "Monaco"
+  }
+
+
+  #ex10 {
+    font-family: "Verdana"
+  }
+
+  #table-font-family {
+    text-align: center
+  }
+</style>
+
+</html>

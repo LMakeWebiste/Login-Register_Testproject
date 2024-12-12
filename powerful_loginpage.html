@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="icon" href="">
+</head>
+
+<body>
+    <div id="div1_signin">
+        <form>
+            <h1>Sign in</h1>
+            <p class="title">Username</p>
+            <input placeholder="Email" id="username" type="text" maxlength="20"><br>
+            <p class="title">Passwort</p>
+            <input placeholder="Password" id="password" type="password" maxlength="20"><br>
+            <a id="fpasswort" onclick="forgotpassword()">forgot passwort?</a><br>
+
+            <button onclick="signin()" id="login">Sign In</button><br>
+            <p>or</p>
+            <a href=""><button id="applelogin" onclick="signinapple()"><img width="13px" height="13px" id="appleicon"
+                        src="../LoginProject/images/Appleicon.jpg" alt="apple icon"> Sign in with
+                    Apple</button></a><br>
+        </form>
+        <p id="paragraph">New at the website? <a href="../LoginProject/powerful_registerpage.html">Join now</a></p>
+    </div>
+</body>
+<style>
+    body {
+        background-image: url("../LoginProject/images/Shanghai.jpg");
+        background-size: 817px;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    h1{
+        padding: 10px;
+    }
+
+    #div1_signin {
+        margin-top: 50px;
+        margin-left: 280px;
+        width: 30%;
+        min-height: 330px;
+        border-radius: 10px;
+        background-color: rgb(255,255,255);
+    }
+
+    #username,
+    #password {
+        margin-bottom: 3px;
+        width: 150px;
+        height: 13px;
+
+    }
+
+    #login {
+        margin-top: 10px;
+    }
+
+    #fpasswort {
+        margin: 0px;
+        font-size: 7px;
+    }
+
+    .title {
+        text-align: left;
+        margin-left: 40px;
+        margin-bottom: 5px;
+        font-size: 13px;
+
+    }
+
+    #login,
+    #applelogin {
+        width: 160px;
+        height: 25px;
+        border-radius: 20px;
+        border-width: 1px;
+    }
+
+    #login {
+        background-color: rgb(59, 59, 253);
+        color: white;
+        border-color: lightblue;
+        border: none;
+        transition: opacity 0.15s, background-color 0.15s;
+    }
+
+    #login:hover {
+        background-color: rgb(86, 86, 255);
+        opacity: 0.9;
+    }
+
+    #login:active {
+        background-color: rgb(117, 117, 255);
+        opacity: 0.7;
+    }
+
+    #applelogin {
+        background-color: white;
+        color: black;
+        border-color: black;
+        transition: opacity 0.15s, background-color 0.15s, color 0.15s;
+    }
+
+    #applelogin:hover {
+        background-color: rgb(222, 222, 222);
+        opacity: 0.9;
+    }
+
+    #applelogin:active {
+        background-color: rgb(174, 174, 174);
+        opacity: 0.5;
+        color: rgb(255, 255, 255);
+    }
+
+    #paragraph {
+        font-size: 7px;
+        margin-top: 5px;
+    }
+</style>
+<script>
+    function signin() {
+        const usernamelists = ["lennartrietdo@gmail.com","dudukoeln@gmail.com"]
+        const passwordlists = ["lennartps","leon2502"]
+        var usernamejs = document.getElementById("username")
+        var passwordjs = document.getElementById("password")
+        var usernameinput = usernamejs.value
+        var passwordinput = passwordjs.value
+        var currentstatic = 0
+        if((usernameinput == "")||(passwordinput == "")){
+            alert("Username or Password was not given")
+        }
+        else{
+            for(let i=0;i<usernamelists.length;i++){
+                if((usernameinput == usernamelists[i])&(passwordinput == passwordlists[i])){
+                    alert("success")
+                    currentstatic=1
+                    window.open("../LoginProject/jsfiddle.html")
+                }
+            }
+            if(currentstatic==0){
+                alert("Username or Password is not correct")
+            }
+        }
+    }
+    function signinapple() {
+        alert("Apple Account didnt found")
+    }
+    function forgotpassword() {
+        document.write("why did you forgot your password!")
+    }
+</script>
+
+</html>
